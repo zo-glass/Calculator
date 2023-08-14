@@ -1,5 +1,5 @@
 //
-//  Calculator, Formatter.swift
+//  Calculator, Number.swift
 //  macOS 13.3, Swift 5.0
 //
 //  Created by zo_glass
@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - Formatter
+// MARK: - Number
 
 struct Number {
     
@@ -43,7 +43,7 @@ struct Number {
         }
     }
     
-    func getFomattedString() -> String {
+    func getFormattedString() -> String {
         guard let convertedNumber = Double(value) else { return "Error" }
         let numberFormatter = NumberFormatter()
         var formattedNumber: String

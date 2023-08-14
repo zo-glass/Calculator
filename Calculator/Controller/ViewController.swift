@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     
     var operand1: Number = .init(value: "0") {
         didSet {
-            displayLabel.text = operand1.getFomattedString()
+            displayLabel.text = operand1.getFormattedString()
         }
     }
     var operand2: Number? {
         didSet {
             if let operand2, operation != nil {
-                displayLabel.text = operand2.getFomattedString()
+                displayLabel.text = operand2.getFormattedString()
             }
         }
     }
